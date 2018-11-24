@@ -127,11 +127,11 @@
 				1375F29921A8D7980043B599 /* Manager */,
 				1375F29421A8D1510043B599 /* StoryBoards */,
 				1375F28B21A8CFC50043B599 /* ViewControllers */,
-				1375F28921A8CFA70043B599 /* Models */,
 				1375F28A21A8CFAD0043B599 /* ViewModel */,
+				1375F28921A8CFA70043B599 /* Models */,
 				1375F25B21A8CDBD0043B599 /* AppDelegate.swift */,
-				1375F26221A8CDC00043B599 /* Assets.xcassets */,
 				1375F26421A8CDC00043B599 /* LaunchScreen.storyboard */,
+				1375F26221A8CDC00043B599 /* Assets.xcassets */,
 				1375F26721A8CDC00043B599 /* Info.plist */,
 			);
 			path = desafioSerttel;

@@ -21,7 +21,7 @@ class TrafficSignal {
     var longitude: Double = 0
     var id: Double = 0
     
-    init(_ utilizacao: String, _ localizacao1: String, _ localizacao2: String, _ funcionamento: String, _ sinalSonoro: String, _ semaforo: String, _ sinalizadorCiclista: String, _  latitude: Double, _ longitude: Double, _ id: Int) {
+    init(_ utilizacao: String, _ localizacao1: String, _ localizacao2: String, _ funcionamento: String, _ sinalSonoro: String, _ semaforo: String, _ sinalizadorCiclista: String, _  latitude: Double, _ longitude: Double, _ id: Double) {
         
         self.utilizacao = utilizacao
         self.localizacao1 = localizacao1

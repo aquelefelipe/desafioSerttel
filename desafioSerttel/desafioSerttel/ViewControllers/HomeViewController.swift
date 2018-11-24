@@ -11,6 +11,8 @@ import GoogleMaps
 
 class HomeViewController: UIViewController {
 
+    let homeView = HomeViewModel()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     
@@ -20,12 +22,10 @@ class HomeViewController: UIViewController {
         self.view = mapView
         
         mapView.delegate = self
-        
-        let marker = GMSMarker()
-        marker.position = CLLocationCoordinate2D(latitude: -8.05428, longitude: -34.8813)
-        marker.title = "Sydney"
-        marker.snippet = "Australia"
-        marker.map = mapView
+        print("Traffic Signal")
+        homeView.getTrafficSignals()
+        print("Add Markers")
+        addMarketsinMap(homeView, mapView)
         // Do any additional setup after loading the view.
     }
     
@@ -41,9 +41,25 @@ class HomeViewController: UIViewController {
     func prepareForSegue(segue: UIStoryboardSegue?, sender: AnyObject?) {
         if segue?.identifier == "detailsSegue" {
             if let nextViewController = segue?.destination as? DetailsViewController {
+                
             }
         }
         
+    }
+    
+    func addMarketsinMap(_ hView: HomeViewModel, _ mapView: GMSMapView) {
+//        for index in 1...hv.qtd {
+//
+//            let identifier: Double = hv.getId(index: index)
+//
+//            let position = CLLocationCoordinate2D(latitude: hv.getLatitude(index: index), longitude: hv.getLongitude(index: index))
+//            let marker = GMSMarker(position: position)
+//            marker.title = hv.getlocalizacao1(index: index)
+//            marker.userData = identifier
+//            marker.map = mapView
+//        }
+        
+        print(hView.semaforosArray)
     }
 
     
@@ -72,20 +88,11 @@ extension HomeViewController: GMSMapViewDelegate {
         alert.addAction(UIAlertAction(title: "yes", style: .default, handler:{ (_) in
           self.performSegue(withIdentifier: "datailsSegue", sender: nil)
         }))
-        alert.addAction(UIAlertAction(title: "no", style: .cancel, handler: nil))
+        alert.addAction(UIAlertAction(title: "no", style: .cancel, handler:{ (_) in
+            //self.homeView.recieveDatas()
+        } ))
         
         self.present(alert, animated: true)
-        
-        print("didTap marker \(marker.title)")
-
-        // remove color from currently selected marker
-        if let selectedMarker = mapView.selectedMarker {
-            selectedMarker.icon = GMSMarker.markerImage(with: nil)
-        }
-
-        // select new marker and make green
-        mapView.selectedMarker = marker
-        marker.icon = GMSMarker.markerImage(with: UIColor.green)
 
         // tap event handled by delegate
         return true

@@ -17,13 +17,15 @@ class Manager {
     
     let apiURL = "http://desafio.serttel.com.br/dadosRecifeSemaforo.json"
 
-    let sharedInstance: Manager = Manager()
+    //let sharedInstance: Manager = Manager()
     private let manager: Alamofire.SessionManager!
     
-    private init() {
+    init() {
         let configutation = URLSessionConfiguration.default
         self.manager = Alamofire.SessionManager(configuration: configutation)
     }
+    
+    
     
     func request(_ method: Alamofire.HTTPMethod,
                  _ completion: @escaping ((_ response: [TrafficSignal], _ error: Any) -> Void)){
@@ -38,24 +40,16 @@ class Manager {
                 if let jsonObjct = response.result.value {
                     
                     var recordsArray: [TrafficSignal] = []
-                    var recordsObjct: TrafficSignal? = nil
+                    //var recordsObjct: TrafficSignal? = nil
                     
                     let json = JSON(jsonObjct)
                     //let records = json["records"]
                     
                     for (index,subJson):(String, JSON) in json["records"] {
-                        recordsObjct?.utilizacao = subJson["utlizacao"].stringValue
-                        recordsObjct?.localizacao1 = subJson["localizacao1"].stringValue
-                        recordsObjct?.localizacao2 = subJson["localizacao2"].stringValue
-                        recordsObjct?.funcionamento = subJson["funcionamento"].stringValue
-                        recordsObjct?.sinalSonoro = subJson["sinalSonoro"].stringValue
-                        recordsObjct?.semaforo = subJson["semaforo"].stringValue
-                        recordsObjct?.sinalizadorCiclista = subJson["sinalizadorCiclista"].stringValue
-                        recordsObjct?.latitude = subJson["latitude"].doubleValue
-                        recordsObjct?.longitude = subJson["longitude"].doubleValue
-                        recordsObjct?.id = subJson["_id"].doubleValue
                         
-                        recordsArray.append(recordsObjct!)
+                        var recordObjcts = TrafficSignal(subJson["utlizacao"].stringValue, subJson["localizacao1"].stringValue, subJson["localizacao2"].stringValue, subJson["funcionamento"].stringValue, subJson["sinalSonoro"].stringValue, subJson["semaforo"].stringValue, subJson["sinalizadorCiclista"].stringValue, subJson["latitude"].doubleValue, subJson["longitude"].doubleValue, subJson["_id"].doubleValue)
+                        
+                        recordsArray.append(recordObjcts)
                         
                     }
                     
