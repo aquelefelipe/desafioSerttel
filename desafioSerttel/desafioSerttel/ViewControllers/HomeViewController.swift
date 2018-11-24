@@ -14,7 +14,7 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     
-        
+        //LATITUDE E LONGITUDE DE RECIFE
         let camera = GMSCameraPosition.camera(withLatitude: -8.05428, longitude: -34.8813, zoom: 6.0)
         let mapView = GMSMapView.map(withFrame: .zero, camera: camera)
         self.view = mapView

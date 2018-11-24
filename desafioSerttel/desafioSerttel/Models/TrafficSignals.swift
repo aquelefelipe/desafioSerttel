@@ -19,7 +19,7 @@ class TrafficSignal {
     var sinalizadorCiclista: String = ""
     var latitude: Double = 0
     var longitude: Double = 0
-    var id: Int = 0
+    var id: Double = 0
     
     init(_ utilizacao: String, _ localizacao1: String, _ localizacao2: String, _ funcionamento: String, _ sinalSonoro: String, _ semaforo: String, _ sinalizadorCiclista: String, _  latitude: Double, _ longitude: Double, _ id: Int) {
         

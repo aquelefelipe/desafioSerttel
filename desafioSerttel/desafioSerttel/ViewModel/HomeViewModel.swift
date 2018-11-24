@@ -8,7 +8,16 @@
 
 import Foundation
 
+//A VIEW MODEL TEM AS FUNÇÃO QUE TRABALHAM EM CIMA DOS VALORES PRESENTE NO MODEL, FAZ A REQUISIÇÃO DOS DADOS E GUARDA-OS NO MODEL
+
 class HomeViewModel {
+    
+    var semaforosArray: [TrafficSignal] = []
+    let manager: Manager 
+    
+    
+    
+    
     
     
     
