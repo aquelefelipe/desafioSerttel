@@ -1,0 +1,811 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1375F25C21A8CDBD0043B599 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1375F25B21A8CDBD0043B599 /* AppDelegate.swift */; };
+		1375F26321A8CDC00043B599 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1375F26221A8CDC00043B599 /* Assets.xcassets */; };
+		1375F26621A8CDC00043B599 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1375F26421A8CDC00043B599 /* LaunchScreen.storyboard */; };
+		1375F27121A8CDC00043B599 /* desafioSerttelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1375F27021A8CDC00043B599 /* desafioSerttelTests.swift */; };
+		1375F27C21A8CDC00043B599 /* desafioSerttelUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1375F27B21A8CDC00043B599 /* desafioSerttelUITests.swift */; };
+		1375F28D21A8D0350043B599 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1375F28C21A8D0350043B599 /* Home.storyboard */; };
+		1375F29321A8D0DD0043B599 /* Details.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1375F29221A8D0DD0043B599 /* Details.storyboard */; };
+		1375F29621A8D2190043B599 /* TrafficSignals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1375F29521A8D2190043B599 /* TrafficSignals.swift */; };
+		1375F29821A8D5E40043B599 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1375F29721A8D5E40043B599 /* HomeViewModel.swift */; };
+		1375F29B21A8D7AC0043B599 /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1375F29A21A8D7AC0043B599 /* Manager.swift */; };
+		1375F29D21A8DF250043B599 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1375F29C21A8DF250043B599 /* HomeViewController.swift */; };
+		1375F29F21A8EDBE0043B599 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1375F29E21A8EDBE0043B599 /* DetailsViewController.swift */; };
+		659DA325FBC92AB1E2AEBE02 /* Pods_desafioSerttelUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E400ECA79EB0215DCCB28DC7 /* Pods_desafioSerttelUITests.framework */; };
+		9D52A45195DF6D93FE6C71AF /* Pods_desafioSerttelTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BCBD3845D9062FAA628CDD2 /* Pods_desafioSerttelTests.framework */; };
+		C780BE7D4D839A3BD8472382 /* Pods_desafioSerttel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3180D3F2FCC9641D28E8A2BB /* Pods_desafioSerttel.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1375F26D21A8CDC00043B599 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1375F25021A8CDBD0043B599 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1375F25721A8CDBD0043B599;
+			remoteInfo = desafioSerttel;
+		};
+		1375F27821A8CDC00043B599 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1375F25021A8CDBD0043B599 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1375F25721A8CDBD0043B599;
+			remoteInfo = desafioSerttel;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1375F25821A8CDBD0043B599 /* desafioSerttel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = desafioSerttel.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1375F25B21A8CDBD0043B599 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1375F26221A8CDC00043B599 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1375F26521A8CDC00043B599 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1375F26721A8CDC00043B599 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1375F26C21A8CDC00043B599 /* desafioSerttelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = desafioSerttelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1375F27021A8CDC00043B599 /* desafioSerttelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = desafioSerttelTests.swift; sourceTree = "<group>"; };
+		1375F27221A8CDC00043B599 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1375F27721A8CDC00043B599 /* desafioSerttelUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = desafioSerttelUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1375F27B21A8CDC00043B599 /* desafioSerttelUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = desafioSerttelUITests.swift; sourceTree = "<group>"; };
+		1375F27D21A8CDC00043B599 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1375F28C21A8D0350043B599 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		1375F29221A8D0DD0043B599 /* Details.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Details.storyboard; sourceTree = "<group>"; };
+		1375F29521A8D2190043B599 /* TrafficSignals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafficSignals.swift; sourceTree = "<group>"; };
+		1375F29721A8D5E40043B599 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		1375F29A21A8D7AC0043B599 /* Manager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Manager.swift; sourceTree = "<group>"; };
+		1375F29C21A8DF250043B599 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		1375F29E21A8EDBE0043B599 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		3180D3F2FCC9641D28E8A2BB /* Pods_desafioSerttel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_desafioSerttel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		57AA8D3894EA43203FD52FA3 /* Pods-desafioSerttelTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-desafioSerttelTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-desafioSerttelTests/Pods-desafioSerttelTests.release.xcconfig"; sourceTree = "<group>"; };
+		5BCBD3845D9062FAA628CDD2 /* Pods_desafioSerttelTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_desafioSerttelTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		65AEDDD6B11FEEC52A108657 /* Pods-desafioSerttel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-desafioSerttel.release.xcconfig"; path = "Pods/Target Support Files/Pods-desafioSerttel/Pods-desafioSerttel.release.xcconfig"; sourceTree = "<group>"; };
+		947717295C91611AAC96FB0E /* Pods-desafioSerttelTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-desafioSerttelTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-desafioSerttelTests/Pods-desafioSerttelTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A380E9DAA8FD7422DCBB6FF3 /* Pods-desafioSerttel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-desafioSerttel.debug.xcconfig"; path = "Pods/Target Support Files/Pods-desafioSerttel/Pods-desafioSerttel.debug.xcconfig"; sourceTree = "<group>"; };
+		C929359705C2515184D75F54 /* Pods-desafioSerttelUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-desafioSerttelUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-desafioSerttelUITests/Pods-desafioSerttelUITests.release.xcconfig"; sourceTree = "<group>"; };
+		E400ECA79EB0215DCCB28DC7 /* Pods_desafioSerttelUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_desafioSerttelUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1102E5C6DB747AEBCD52415 /* Pods-desafioSerttelUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-desafioSerttelUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-desafioSerttelUITests/Pods-desafioSerttelUITests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1375F25521A8CDBD0043B599 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C780BE7D4D839A3BD8472382 /* Pods_desafioSerttel.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1375F26921A8CDC00043B599 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D52A45195DF6D93FE6C71AF /* Pods_desafioSerttelTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1375F27421A8CDC00043B599 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				659DA325FBC92AB1E2AEBE02 /* Pods_desafioSerttelUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1375F24F21A8CDBD0043B599 = {
+			isa = PBXGroup;
+			children = (
+				1375F25A21A8CDBD0043B599 /* desafioSerttel */,
+				1375F26F21A8CDC00043B599 /* desafioSerttelTests */,
+				1375F27A21A8CDC00043B599 /* desafioSerttelUITests */,
+				1375F25921A8CDBD0043B599 /* Products */,
+				5708370E43905063E9B0AFA7 /* Pods */,
+				1EA43CF0E808C38D613C8DC6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1375F25921A8CDBD0043B599 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1375F25821A8CDBD0043B599 /* desafioSerttel.app */,
+				1375F26C21A8CDC00043B599 /* desafioSerttelTests.xctest */,
+				1375F27721A8CDC00043B599 /* desafioSerttelUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1375F25A21A8CDBD0043B599 /* desafioSerttel */ = {
+			isa = PBXGroup;
+			children = (
+				1375F29921A8D7980043B599 /* Manager */,
+				1375F29421A8D1510043B599 /* StoryBoards */,
+				1375F28B21A8CFC50043B599 /* ViewControllers */,
+				1375F28921A8CFA70043B599 /* Models */,
+				1375F28A21A8CFAD0043B599 /* ViewModel */,
+				1375F25B21A8CDBD0043B599 /* AppDelegate.swift */,
+				1375F26221A8CDC00043B599 /* Assets.xcassets */,
+				1375F26421A8CDC00043B599 /* LaunchScreen.storyboard */,
+				1375F26721A8CDC00043B599 /* Info.plist */,
+			);
+			path = desafioSerttel;
+			sourceTree = "<group>";
+		};
+		1375F26F21A8CDC00043B599 /* desafioSerttelTests */ = {
+			isa = PBXGroup;
+			children = (
+				1375F27021A8CDC00043B599 /* desafioSerttelTests.swift */,
+				1375F27221A8CDC00043B599 /* Info.plist */,
+			);
+			path = desafioSerttelTests;
+			sourceTree = "<group>";
+		};
+		1375F27A21A8CDC00043B599 /* desafioSerttelUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1375F27B21A8CDC00043B599 /* desafioSerttelUITests.swift */,
+				1375F27D21A8CDC00043B599 /* Info.plist */,
+			);
+			path = desafioSerttelUITests;
+			sourceTree = "<group>";
+		};
+		1375F28921A8CFA70043B599 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1375F29521A8D2190043B599 /* TrafficSignals.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1375F28A21A8CFAD0043B599 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1375F29721A8D5E40043B599 /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		1375F28B21A8CFC50043B599 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				1375F29C21A8DF250043B599 /* HomeViewController.swift */,
+				1375F29E21A8EDBE0043B599 /* DetailsViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		1375F29421A8D1510043B599 /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				1375F28C21A8D0350043B599 /* Home.storyboard */,
+				1375F29221A8D0DD0043B599 /* Details.storyboard */,
+			);
+			path = StoryBoards;
+			sourceTree = "<group>";
+		};
+		1375F29921A8D7980043B599 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				1375F29A21A8D7AC0043B599 /* Manager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		1EA43CF0E808C38D613C8DC6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3180D3F2FCC9641D28E8A2BB /* Pods_desafioSerttel.framework */,
+				5BCBD3845D9062FAA628CDD2 /* Pods_desafioSerttelTests.framework */,
+				E400ECA79EB0215DCCB28DC7 /* Pods_desafioSerttelUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5708370E43905063E9B0AFA7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A380E9DAA8FD7422DCBB6FF3 /* Pods-desafioSerttel.debug.xcconfig */,
+				65AEDDD6B11FEEC52A108657 /* Pods-desafioSerttel.release.xcconfig */,
+				947717295C91611AAC96FB0E /* Pods-desafioSerttelTests.debug.xcconfig */,
+				57AA8D3894EA43203FD52FA3 /* Pods-desafioSerttelTests.release.xcconfig */,
+				F1102E5C6DB747AEBCD52415 /* Pods-desafioSerttelUITests.debug.xcconfig */,
+				C929359705C2515184D75F54 /* Pods-desafioSerttelUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1375F25721A8CDBD0043B599 /* desafioSerttel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1375F28021A8CDC00043B599 /* Build configuration list for PBXNativeTarget "desafioSerttel" */;
+			buildPhases = (
+				A1AA071BA3A8D3DB345A6BC7 /* [CP] Check Pods Manifest.lock */,
+				1375F25421A8CDBD0043B599 /* Sources */,
+				1375F25521A8CDBD0043B599 /* Frameworks */,
+				1375F25621A8CDBD0043B599 /* Resources */,
+				8CFD34F568610A60EAB2F961 /* [CP] Embed Pods Frameworks */,
+				B62B25E39406E456EF27271E /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = desafioSerttel;
+			productName = desafioSerttel;
+			productReference = 1375F25821A8CDBD0043B599 /* desafioSerttel.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1375F26B21A8CDC00043B599 /* desafioSerttelTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1375F28321A8CDC00043B599 /* Build configuration list for PBXNativeTarget "desafioSerttelTests" */;
+			buildPhases = (
+				3DC67FE94A41D373C2B4A955 /* [CP] Check Pods Manifest.lock */,
+				1375F26821A8CDC00043B599 /* Sources */,
+				1375F26921A8CDC00043B599 /* Frameworks */,
+				1375F26A21A8CDC00043B599 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1375F26E21A8CDC00043B599 /* PBXTargetDependency */,
+			);
+			name = desafioSerttelTests;
+			productName = desafioSerttelTests;
+			productReference = 1375F26C21A8CDC00043B599 /* desafioSerttelTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1375F27621A8CDC00043B599 /* desafioSerttelUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1375F28621A8CDC00043B599 /* Build configuration list for PBXNativeTarget "desafioSerttelUITests" */;
+			buildPhases = (
+				DE46F9EBA87D71BB80D82D37 /* [CP] Check Pods Manifest.lock */,
+				1375F27321A8CDC00043B599 /* Sources */,
+				1375F27421A8CDC00043B599 /* Frameworks */,
+				1375F27521A8CDC00043B599 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1375F27921A8CDC00043B599 /* PBXTargetDependency */,
+			);
+			name = desafioSerttelUITests;
+			productName = desafioSerttelUITests;
+			productReference = 1375F27721A8CDC00043B599 /* desafioSerttelUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1375F25021A8CDBD0043B599 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Felipe Figueirôa";
+				TargetAttributes = {
+					1375F25721A8CDBD0043B599 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					1375F26B21A8CDC00043B599 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 1375F25721A8CDBD0043B599;
+					};
+					1375F27621A8CDC00043B599 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 1375F25721A8CDBD0043B599;
+					};
+				};
+			};
+			buildConfigurationList = 1375F25321A8CDBD0043B599 /* Build configuration list for PBXProject "desafioSerttel" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1375F24F21A8CDBD0043B599;
+			productRefGroup = 1375F25921A8CDBD0043B599 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1375F25721A8CDBD0043B599 /* desafioSerttel */,
+				1375F26B21A8CDC00043B599 /* desafioSerttelTests */,
+				1375F27621A8CDC00043B599 /* desafioSerttelUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1375F25621A8CDBD0043B599 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1375F28D21A8D0350043B599 /* Home.storyboard in Resources */,
+				1375F26621A8CDC00043B599 /* LaunchScreen.storyboard in Resources */,
+				1375F26321A8CDC00043B599 /* Assets.xcassets in Resources */,
+				1375F29321A8D0DD0043B599 /* Details.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1375F26A21A8CDC00043B599 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1375F27521A8CDC00043B599 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3DC67FE94A41D373C2B4A955 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-desafioSerttelTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8CFD34F568610A60EAB2F961 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-desafioSerttel/Pods-desafioSerttel-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-desafioSerttel/Pods-desafioSerttel-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A1AA071BA3A8D3DB345A6BC7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-desafioSerttel-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B62B25E39406E456EF27271E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-desafioSerttel/Pods-desafioSerttel-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlaces.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-desafioSerttel/Pods-desafioSerttel-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DE46F9EBA87D71BB80D82D37 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-desafioSerttelUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1375F25421A8CDBD0043B599 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1375F29D21A8DF250043B599 /* HomeViewController.swift in Sources */,
+				1375F25C21A8CDBD0043B599 /* AppDelegate.swift in Sources */,
+				1375F29821A8D5E40043B599 /* HomeViewModel.swift in Sources */,
+				1375F29621A8D2190043B599 /* TrafficSignals.swift in Sources */,
+				1375F29B21A8D7AC0043B599 /* Manager.swift in Sources */,
+				1375F29F21A8EDBE0043B599 /* DetailsViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1375F26821A8CDC00043B599 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1375F27121A8CDC00043B599 /* desafioSerttelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1375F27321A8CDC00043B599 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1375F27C21A8CDC00043B599 /* desafioSerttelUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1375F26E21A8CDC00043B599 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1375F25721A8CDBD0043B599 /* desafioSerttel */;
+			targetProxy = 1375F26D21A8CDC00043B599 /* PBXContainerItemProxy */;
+		};
+		1375F27921A8CDC00043B599 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1375F25721A8CDBD0043B599 /* desafioSerttel */;
+			targetProxy = 1375F27821A8CDC00043B599 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1375F26421A8CDC00043B599 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1375F26521A8CDC00043B599 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1375F27E21A8CDC00043B599 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1375F27F21A8CDC00043B599 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1375F28121A8CDC00043B599 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A380E9DAA8FD7422DCBB6FF3 /* Pods-desafioSerttel.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NYG46NY933;
+				INFOPLIST_FILE = desafioSerttel/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.felipefigueiroa.desafioSerttel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1375F28221A8CDC00043B599 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 65AEDDD6B11FEEC52A108657 /* Pods-desafioSerttel.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NYG46NY933;
+				INFOPLIST_FILE = desafioSerttel/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.felipefigueiroa.desafioSerttel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1375F28421A8CDC00043B599 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 947717295C91611AAC96FB0E /* Pods-desafioSerttelTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NYG46NY933;
+				INFOPLIST_FILE = desafioSerttelTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.felipefigueiroa.desafioSerttelTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/desafioSerttel.app/desafioSerttel";
+			};
+			name = Debug;
+		};
+		1375F28521A8CDC00043B599 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 57AA8D3894EA43203FD52FA3 /* Pods-desafioSerttelTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NYG46NY933;
+				INFOPLIST_FILE = desafioSerttelTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.felipefigueiroa.desafioSerttelTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/desafioSerttel.app/desafioSerttel";
+			};
+			name = Release;
+		};
+		1375F28721A8CDC00043B599 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F1102E5C6DB747AEBCD52415 /* Pods-desafioSerttelUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NYG46NY933;
+				INFOPLIST_FILE = desafioSerttelUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.felipefigueiroa.desafioSerttelUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = desafioSerttel;
+			};
+			name = Debug;
+		};
+		1375F28821A8CDC00043B599 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C929359705C2515184D75F54 /* Pods-desafioSerttelUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NYG46NY933;
+				INFOPLIST_FILE = desafioSerttelUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.felipefigueiroa.desafioSerttelUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = desafioSerttel;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1375F25321A8CDBD0043B599 /* Build configuration list for PBXProject "desafioSerttel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1375F27E21A8CDC00043B599 /* Debug */,
+				1375F27F21A8CDC00043B599 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1375F28021A8CDC00043B599 /* Build configuration list for PBXNativeTarget "desafioSerttel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1375F28121A8CDC00043B599 /* Debug */,
+				1375F28221A8CDC00043B599 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1375F28321A8CDC00043B599 /* Build configuration list for PBXNativeTarget "desafioSerttelTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1375F28421A8CDC00043B599 /* Debug */,
+				1375F28521A8CDC00043B599 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1375F28621A8CDC00043B599 /* Build configuration list for PBXNativeTarget "desafioSerttelUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1375F28721A8CDC00043B599 /* Debug */,
+				1375F28821A8CDC00043B599 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1375F25021A8CDBD0043B599 /* Project object */;
+}
