@@ -8,7 +8,7 @@
 
 import Foundation
 
-class TrafficSignal {
+class TrafficSignal: NSObject {
     
     var utilizacao: String = ""
     var localizacao1: String = ""

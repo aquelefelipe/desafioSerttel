@@ -10,7 +10,7 @@ import Foundation
 
 //A VIEW MODEL TEM AS FUNÇÃO QUE TRABALHAM EM CIMA DOS VALORES PRESENTE NO MODEL, FAZ A REQUISIÇÃO DOS DADOS E GUARDA-OS NO MODEL
 
-class HomeViewModel {
+class HomeViewModel: NSObject {
     
     let manager = Manager()
     
@@ -19,11 +19,13 @@ class HomeViewModel {
     
     
     
-    func getTrafficSignals() {
+    func getTrafficSignals(_ completion: @escaping () -> Void ) {
         
-        self.manager.request(.get) { (trafficSignal, erro) in
+        manager.request(.get) { (trafficSignal, erro) in
+            print("localização1: \(trafficSignal[1].localizacao1) \n localização2: \(trafficSignal[1].localizacao2)\n Latitude: \(trafficSignal[1].latitude) ")
             self.semaforosArray.append(contentsOf: trafficSignal)
-           trafficSignal.map{self.semaforosArray.append($0)}
+            completion()
+
         }
         
         
@@ -57,7 +59,7 @@ class HomeViewModel {
     }
     
     func getLatitude(index: Int) -> Double {
-        return semaforosArray[index].latitude
+        return semaforosArray[index].latitude 
     }
     
     func getLongitude(index: Int) -> Double {
@@ -67,12 +69,6 @@ class HomeViewModel {
     func getId(index: Int) -> Double {
         return semaforosArray[index].latitude
     }
-    
-    
-    
-    
-    
-    
-    
+
     
 }

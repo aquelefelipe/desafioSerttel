@@ -47,17 +47,27 @@ class Manager {
                     
                     for (index,subJson):(String, JSON) in json["records"] {
                         
-                        var recordObjcts = TrafficSignal(subJson["utlizacao"].stringValue, subJson["localizacao1"].stringValue, subJson["localizacao2"].stringValue, subJson["funcionamento"].stringValue, subJson["sinalSonoro"].stringValue, subJson["semaforo"].stringValue, subJson["sinalizadorCiclista"].stringValue, subJson["latitude"].doubleValue, subJson["longitude"].doubleValue, subJson["_id"].doubleValue)
+                        let recordObjcts = TrafficSignal(subJson["utilizacao"].stringValue,
+                                                         subJson["localizacao1"].stringValue,
+                                                         subJson["localizacao2"].stringValue,
+                                                         subJson["funcionamento"].stringValue,
+                                                         subJson["sinalsonoro"].stringValue,
+                                                         subJson["semaforo"].stringValue,
+                                                         subJson["sinalizadorciclista"].stringValue,
+                                                         subJson["Latitude"].doubleValue,
+                                                         subJson["Longitude"].doubleValue,
+                                                         subJson["_id"].doubleValue)
                         
                         recordsArray.append(recordObjcts)
                         
                     }
                     
                     completion(recordsArray, "")
-                    
-                    
                 }
+                
+                
             }
+            
         }
         
     }
