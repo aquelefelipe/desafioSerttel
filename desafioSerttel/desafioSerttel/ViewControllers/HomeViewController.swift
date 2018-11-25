@@ -14,6 +14,10 @@ class HomeViewController: UIViewController {
     let homeView = HomeViewModel()
     var signalsArray: [TrafficSignal]?
     var tapedPin: TrafficSignal?
+    var soundSignal: Bool = false
+    var mapView: GMSMapView!
+    @IBOutlet weak var bnt: UIButton!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,16 +25,18 @@ class HomeViewController: UIViewController {
         //CARREGA O MAPA NO APLICATICO
         //COORDENADAS DA CIDADE DO RECIFE
         let camera = GMSCameraPosition.camera(withLatitude: -8.05428, longitude: -34.8813, zoom: 12.0)
-        let mapView = GMSMapView.map(withFrame: .zero, camera: camera)
+        mapView = GMSMapView.map(withFrame: .zero, camera: camera)
         self.view = mapView
         
         mapView.delegate = self
         
         self.homeView.getTrafficSignals {
-            print(self.homeView.semaforosArray)
-            self.addMarketsinMap(self.homeView, mapView)
+            
+            self.addMarketsinMap(self.homeView, self.mapView, self.soundSignal)
             
         }
+        //self.bnt.titleLabel?.font = UIFont(name: "Filter", size: 20.0)
+        self.view.addSubview(self.bnt)
         // Do any additional setup after loading the view.
     }
     
@@ -39,18 +45,52 @@ class HomeViewController: UIViewController {
         navigationItem.title = "Mapa"
     }
     
-    //ESTA FUNCÃO CARREGA NO MAPA TODOS OS MARKER QUE REPRESENTAM OS SEMAFOROS
-    func addMarketsinMap(_ signals: HomeViewModel, _ mapView: GMSMapView) {
+    //ESTA FUNCÃO CARREGA NO MAPA TODOS OS MARKER QUE REPRESENTAM OS SEMAFOROS OU APENAS AQUELES QUE POSSUEM SINAL SONOTO
+    func addMarketsinMap(_ signals: HomeViewModel, _ mapView: GMSMapView, _ soundTrafficSignal: Bool) {
     
+        mapView.clear()
         for index in 1...signals.semaforosArray.count - 1 {
-            let position = CLLocationCoordinate2D(latitude: signals.getLatitude(index: index), longitude: signals.getLongitude(index: index))
-            let marker = GMSMarker(position: position)
-            marker.title = signals.semaforosArray[index].localizacao1
-            marker.userData = signals.semaforosArray[index]
-            marker.map = mapView
+            
+            if soundTrafficSignal {
+                
+                if signals.semaforosArray[index].sinalSonoro == "S" {
+                    
+                    self.addMarker(signals, index, mapView)
+                    
+                }
+                
+            } else {
+                
+                
+                self.addMarker(signals, index, mapView)
+                
+            }
+            
+            
         }
         
     }
+    
+    func addMarker( _ homeView: HomeViewModel, _ index: Int, _ mapView: GMSMapView) {
+        
+        let position = CLLocationCoordinate2D(latitude: homeView.getLatitude(index: index), longitude: homeView.getLongitude(index: index))
+        let marker = GMSMarker(position: position)
+        marker.title = homeView.semaforosArray[index].localizacao1
+        marker.userData = homeView.semaforosArray[index]
+        marker.map = mapView
+        
+    }
+    
+    @IBAction func changeMarkers(_ sender: Any) {
+        if self.soundSignal == true{
+            self.soundSignal = false
+            self.addMarketsinMap(self.homeView, self.mapView, self.soundSignal)
+        }else {
+            self.soundSignal = true
+            self.addMarketsinMap(self.homeView, self.mapView, self.soundSignal)
+        }
+    }
+    
     
     
     //CARREGA AS INFORMAÇÕES QUE SERÃO PASSADAS PARA OUTRA TELA DE ACORDO COM O NOME DA SEGUE
