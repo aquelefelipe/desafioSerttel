@@ -22,7 +22,6 @@ class HomeViewModel: NSObject {
     func getTrafficSignals(_ completion: @escaping () -> Void ) {
         
         manager.request(.get) { (trafficSignal, erro) in
-            print("localização1: \(trafficSignal[1].localizacao1) \n localização2: \(trafficSignal[1].localizacao2)\n Latitude: \(trafficSignal[1].latitude) ")
             self.semaforosArray.append(contentsOf: trafficSignal)
             completion()
 

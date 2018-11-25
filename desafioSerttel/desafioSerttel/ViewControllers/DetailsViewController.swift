@@ -26,20 +26,27 @@ class DetailsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.localizacao.text = self.localizacao.text! + " " + (self.markerPin?.localizacao1)!
-        self.referencia.text = self.referencia.text! + " " + (self.markerPin?.localizacao2)!
-        self.utilizacao.text = self.utilizacao.text! + " " + (self.markerPin?.utilizacao)!
-        self.funcionamento.text = self.funcionamento.text! + " " + (self.markerPin?.funcionamento)!
-        self.sinalSonoro.text = self.sinalSonoro.text! + " " + (self.markerPin?.sinalSonoro)!
-        self.semaforo.text = self.semaforo.text! + " " + (self.markerPin?.semaforo)!
-        self.sinalCiclista.text = self.sinalCiclista.text! + " " + (self.markerPin?.sinalizadorCiclista)!
-        self.latitude.text = self.latitude.text! + " " + String(format: "%f", (self.markerPin?.latitude)!)
-        self.longitude.text = self.longitude.text! + " " + String(format: "%f", (self.markerPin?.longitude)!)
+        apresentMarkerInfos(signal: markerPin!)
         
-        print(self.markerPin?.utilizacao)
         // Do any additional setup after loading the view.
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationItem.title = "Informações"
+    }
+    
+    func apresentMarkerInfos(signal: TrafficSignal) {
+        self.localizacao.text = self.localizacao.text! + " " + (signal.localizacao1)
+        self.referencia.text = self.referencia.text! + " " + (signal.localizacao2)
+        self.utilizacao.text = self.utilizacao.text! + " " + (signal.utilizacao)
+        self.funcionamento.text = self.funcionamento.text! + " " + (signal.funcionamento)
+        self.sinalSonoro.text = self.sinalSonoro.text! + " " + signal.sinalSonoro
+        self.semaforo.text = self.semaforo.text! + " " + signal.semaforo
+        self.sinalCiclista.text = self.sinalCiclista.text! + " " + signal.sinalizadorCiclista
+        self.latitude.text = self.latitude.text! + " " + String(format: "%f", (signal.latitude))
+        self.longitude.text = self.longitude.text! + " " + String(format: "%f", (signal.longitude))
+    }
 
     /*
     // MARK: - Navigation
